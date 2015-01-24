@@ -1,0 +1,11 @@
+certifi==14.5.14
+Django==1.7.3
+Flask==0.10.1
+Flask-SQLAlchemy==2.0
+itsdangerous==0.24
+Jinja2==2.7.3
+MarkupSafe==0.23
+requests==2.5.1
+SQLAlchemy==0.9.8
+tornado==4.0.2
+Werkzeug==0.9.6
