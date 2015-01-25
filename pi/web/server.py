@@ -21,16 +21,18 @@ class Roast(db.Model):
     beans        = db.Column(db.String(100))
     weight       = db.Column(db.Integer)
     roaster      = db.Column(db.String(50))
+    duration     = db.Column(db.Numeric(5, 2))
     start_at     = db.Column(db.DateTime(True))
     end_at       = db.Column(db.DateTime(True))
     first_crack  = db.Column(db.DateTime(True))
     second_crack = db.Column(db.DateTime(True))
     synced       = db.Column(db.Boolean)
 
-    def __init__(self, beans, weight, roaster):
+    def __init__(self, beans, weight, roaster, duration):
         self.beans    = beans
         self.weight   = weight
         self.roaster  = roaster
+        self.duration = duration
         self.start_at = datetime.utcnow()
         self.synced   = False
 
