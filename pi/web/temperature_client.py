@@ -10,5 +10,5 @@ class TemperatureClient:
         """Retrieve the reading from the temperature server"""
         location = "http://{0}:{1}/".format(self.host, self.port)
         response = requests.get(location)
-        return r.json()
+        return response.json()
 
