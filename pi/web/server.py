@@ -10,7 +10,7 @@ TEMP_SERVER_HOST = '127.0.0.1'
 TEMP_SERVER_PORT = 8888
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite://roasts.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///roasts.db'
 db = SQLAlchemy(app)
 
 ###
